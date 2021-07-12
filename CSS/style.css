@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.root {
+  scroll-behavior: smooth;
+}
+
+.header {
+  height: 15vh;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  height: inherit;
+}
+.header-name {
+  color: orangered;
+  font-family: 'Marmelad', sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  text-align: center;
+  font-weight: 300;
+  color: #9f8ad0;
+  margin-bottom: 40px;
+  font-size: 45px;
+}
+
+.score {
+  background-color: #161b21;
+}
+
+.score-container {
+  display: flex;
+  height: 66px;
+  flex-flow: column wrap;
+  align-content: space-between;
+  margin: 0 40px;
+}
+
+.score-text {
+  font-weight: 300;
+  font-size: 45px;
+  color: #f4a950;
+}
+
+.question {
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.question-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question-text {
+  text-align: center;
+  font-weight: 300;
+  color: #000060;
+  margin-bottom: 30px;
+  font-size: 45px;
+}
+
+.answers {
+  background: #f2f2f2;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: auto;
+  padding: 60px 0px;
+}
+
+.answer-container {
+  display: flex;
+  width: 323px;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.btn {
+  border-radius: 20px;
+  outline: none;
+  width: 580px;
+  height: 130px;
+  font-size: 30px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+}
+.btn:focus {
+  color: #ffffff;
+  outline: 0;
+}
+
+.btn:hover {
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+
+.btn-blue {
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.btn-green {
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+
+.btn-red {
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+}
+
+.btn-yellow {
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
