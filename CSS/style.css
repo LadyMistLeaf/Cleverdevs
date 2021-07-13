@@ -22,6 +22,7 @@ body {
 .header-logo {
   height: inherit;
 }
+
 .header-name {
   color: orangered;
   font-family: 'Marmelad', sans-serif;
@@ -77,6 +78,10 @@ body {
   margin-bottom: 30px;
   font-size: 45px;
 }
+
+.question-img{
+  display: block;
+} 
 
 .answers {
   background: #f2f2f2;
@@ -144,4 +149,72 @@ body {
 
 .btn-yellow {
   background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+
+@media screen and (max-width:800px) {
+  .header{
+    width: 100%;
+  }
+
+  .header-name {
+    font-weight: 100;
+    font-size: 30px;
+  }
+  .score-container{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .score-text{
+    font-weight: 100;
+    font-size: 30px;
+  }
+  .question-container{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .question-text{
+    font-weight: 100;
+    font-size: 30px;
+  }
+ 
+  .question-img{
+    width: 100%;
+  } 
+  .answer-container{
+  width: 100%;
+  }
+  .btn{
+    width: 100%;
+  }
+  .btn-blue{
+    width: 100%;
+  }
+  .btn-green{
+    width: 100%;
+  }
+  .btn-red{
+    width: 100%;
+  }
+  .btn-yellow{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:300px){
+  .header-name {
+    font-weight: 100;
+    font-size: 10px;
+  }
+  .score-container{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .score-text{
+    font-weight: 100;
+    font-size: 10px;
+  }
 }
