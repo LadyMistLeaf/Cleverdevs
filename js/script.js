@@ -7,6 +7,7 @@ const BUTTON_1 = document.getElementById("button1");
 const BUTTON_2 = document.getElementById("button2");
 const BUTTON_3 = document.getElementById("button3");
 const BUTTON_4 = document.getElementById("button4");
+const SCORE = document.getElementById("score");
 
 const DIALOG_INFO = [
     {
@@ -71,22 +72,42 @@ const DIALOG_INFO = [
 
 let spaceDown = false; // a check variable to see if the space key is down
 let checkSpaceDown = false; // a check variable to see if we've looked for it already in the case of single actions
+let score = 0;
+let dialogue = true;
 
 let quizSection = 0;
+let quizLength = DIALOG_INFO.length;
 let innerSection = 0;
 let status = "dialogue";
 let answerCorrect = false;
 
+if(DIALOG_INFO[quizSection].dialogue.length == 0){
+    dialogue = false;
+}
+
 updateDialogue = () => {
-    DIALOG_BOX.innerHTML = DIALOG_INFO[quizSection].dialogue[innerSection];
-    innerSection++;
+    if(dialogue){
+        DIALOG_BOX.innerHTML = DIALOG_INFO[quizSection].dialogue[innerSection];
+        innerSection++;
+    }
+    else {
+        startQuiz();
+    }
+}
+
+updateScore = () => {
+    SCORE.innerText = score;
 }
 
 startGame = () => {
+    if(dialogue){
+        toggleButtons();
+    }
     updateDialogue();
+    updateScore();
 }
 
-document.onload = startGame();
+
 
 document.onkeypress = function(event){
     if(event.key == " "){
@@ -120,19 +141,25 @@ spaceKeyDown = () => {
 }
 
 startQuiz = () => {
+    if(dialogue){
+        toggleButtons
+    }
     DIALOG_BOX.innerText = DIALOG_INFO[quizSection].question;
     ANSWER_1.innerText = DIALOG_INFO[quizSection].options[0].answer;
     ANSWER_2.innerText = DIALOG_INFO[quizSection].options[1].answer;
     ANSWER_3.innerText = DIALOG_INFO[quizSection].options[2].answer;
     ANSWER_4.innerText = DIALOG_INFO[quizSection].options[3].answer;
-    ANSWER_1.classList.toggle("inactive");
-    ANSWER_2.classList.toggle("inactive");
-    ANSWER_3.classList.toggle("inactive");
-    ANSWER_4.classList.toggle("inactive");
     BUTTON_1.addEventListener("click", function(){checkAnswer(0)});
     BUTTON_2.addEventListener("click", function(){checkAnswer(1)});
     BUTTON_3.addEventListener("click", function(){checkAnswer(2)});
     BUTTON_4.addEventListener("click", function(){checkAnswer(3)});
+}
+
+toggleButtons = () => {
+    BUTTON_1.classList.toggle("inactive");
+    BUTTON_2.classList.toggle("inactive");
+    BUTTON_3.classList.toggle("inactive");
+    BUTTON_4.classList.toggle("inactive");
 }
 
 checkAnswer = (answer) => {
@@ -142,8 +169,12 @@ checkAnswer = (answer) => {
         quizSection++;
         innerSection = 0;
         status = "dialogue";
+        score += 10;
+        updateScore();
     }
     else{
         DIALOG_BOX.innerText = DIALOG_INFO[quizSection].options[answer].response;
     }
 }
+
+document.onload = startGame();
