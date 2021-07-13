@@ -1,0 +1,150 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main h1 {
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.main_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.main_firstMember,
+.main_secondMember,
+.main_thirdMember,
+.main_fourthMember {
+  width: 500px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid whitesmoke;
+  background: whitesmoke;
+  color: black;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.image {
+  max-width: 600px;
+  height: 200px;
+
+  display: flex;
+  flex: 0.4;
+}
+
+.image img {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.user_info {
+  margin-left: 20px;
+  flex: 0.6;
+}
+
+.user_info h2 {
+  font-weight: 500;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1095px) {
+  .main_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main_firstMember,
+  .main_secondMember,
+  .main_thirdMember,
+  .main_fourthMember {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    border: 2px solid whitesmoke;
+    background: whitesmoke;
+    color: black;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .image {
+    max-width: 400px;
+    height: 150px;
+
+    display: flex;
+    flex: 0.4;
+  }
+
+  .image img {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .user_info {
+    margin-left: 20px;
+    flex: 0.6;
+  }
+
+  .user_info h2 {
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .user_info span {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .main_firstMember,
+  .main_secondMember,
+  .main_thirdMember,
+  .main_fourthMember {
+    width: 350px;
+    height: 200px;
+    display: flex;
+    border: 2px solid whitesmoke;
+    background: whitesmoke;
+    color: black;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .image {
+    max-width: 300px;
+    height: 150px;
+
+    display: flex;
+    flex: 0.4;
+  }
+
+  .image img {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .user_info {
+    margin-left: 20px;
+    flex: 0.6;
+  }
+
+  .user_info h2 {
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  .user_info span {
+    font-size: 10px;
+  }
+}
