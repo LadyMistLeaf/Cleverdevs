@@ -90,6 +90,10 @@ let status = "dialogue";
 let answerCorrect = false;
 let buttonsActive = false; // to replace spacebar, check if there are buttons to be clicked to continue
 
+let congrats = new Audio('sounds/crowd-cheer.wav');
+let wrongAnswer = new Audio('sounds/failure-drum.mp3');
+let goodAnswer = new Audio('sounds/applause.wav');
+
 toggleButtons = () => {
     BUTTON_1.classList.toggle("inactive");
     BUTTON_2.classList.toggle("inactive");
@@ -195,6 +199,7 @@ checkAnswer = (answer) => {
             endQuiz();
         }
         else {
+            goodAnswer.play();
             if(dialogue){
                 status = "dialogue";
                 toggleButtons();
@@ -205,7 +210,8 @@ checkAnswer = (answer) => {
     }
     else{
         DIALOG_BOX.innerText = DIALOG_INFO[quizSection].options[answer].response;
-        if(answerTries != points.length){
+        wrongAnswer.play();
+        if(answerTries != points.length - 1){
             answerTries++;
         }
     }
@@ -214,6 +220,7 @@ checkAnswer = (answer) => {
 endQuiz = () => {
     DIALOG_BOX.innerText = "Congratulations!  Your score is " + score;
     status = "end";
+    congrats.play();
 };
 
 document.onload = startGame();
