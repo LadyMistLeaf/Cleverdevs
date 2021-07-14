@@ -156,3 +156,8 @@
     font-size: 26px;
   }
 }
+
+.inactive {
+  opacity: 0;
+  cursor: auto !important;
+}
