@@ -21,6 +21,7 @@
 .main_team h1 {
   font-weight: 500;
   margin: 0px 0 20px 0;
+  color: white;
 }
 .main_teamContainer {
   display: grid;
