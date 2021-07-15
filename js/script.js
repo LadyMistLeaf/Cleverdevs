@@ -293,8 +293,6 @@ const DIALOG_INFO = [
   },
 ];
 
-let spaceDown = false; // a check variable to see if the space key is down
-let checkSpaceDown = false; // a check variable to see if we've looked for it already in the case of single actions
 let score = 0;
 let dialogue = true;
 let answerTries = 0;
@@ -316,6 +314,21 @@ toggleButtons = () => {
   BUTTON_2.classList.toggle("inactive");
   BUTTON_3.classList.toggle("inactive");
   BUTTON_4.classList.toggle("inactive");
+};
+
+makeButtonsActive = () => {
+  BUTTON_1.addEventListener("click", function () {
+    checkAnswer(0);
+  });
+  BUTTON_2.addEventListener("click", function () {
+    checkAnswer(1);
+  });
+  BUTTON_3.addEventListener("click", function () {
+    checkAnswer(2);
+  });
+  BUTTON_4.addEventListener("click", function () {
+    checkAnswer(3);
+  });
 };
 
 if (DIALOG_INFO[quizSection].dialogue.length === 0) {
@@ -359,7 +372,7 @@ document.onkeyup = function (event) {
 };
 
 spaceKeyDown = () => {
-  if (status == "dialogue" && !checkSpaceDown) {
+  if (status == "dialogue") {
     if (innerSection != 3) {
       updateDialogue();
       checkSpaceDown = true;
@@ -386,21 +399,6 @@ updateButtons = () => {
   ANSWER_2.innerText = DIALOG_INFO[quizSection].options[1].answer;
   ANSWER_3.innerText = DIALOG_INFO[quizSection].options[2].answer;
   ANSWER_4.innerText = DIALOG_INFO[quizSection].options[3].answer;
-};
-
-makeButtonsActive = () => {
-  BUTTON_1.addEventListener("click", function () {
-    checkAnswer(0);
-  });
-  BUTTON_2.addEventListener("click", function () {
-    checkAnswer(1);
-  });
-  BUTTON_3.addEventListener("click", function () {
-    checkAnswer(2);
-  });
-  BUTTON_4.addEventListener("click", function () {
-    checkAnswer(3);
-  });
 };
 
 makeButtonsInactive = () => {
@@ -451,5 +449,7 @@ endQuiz = () => {
   status = "end";
   congrats.play();
 };
+
+BUTTON_NEXT.addEventListener("click", function(){spaceKeyDown();});
 
 document.onload = startGame();
