@@ -12,66 +12,282 @@ const SCORE = document.getElementById("score");
 
 const DIALOG_INFO = [
   {
-    dialogue: [
-      "Hey, newbie!  If you ever get stuck on a problem, just ask!  Always start with the <HTML> tag!",
-      "Hi there!  I was so nervous when I first started that I was using something other than the forward slash (/) to close a tag!",
-      "Hello!  Don't worry, it takes a while before you start to remember which tags are self-closing.  The HTML tag is not one of them!",
-    ],
-    question: "Which one of these opens and closes the HTML tag?",
+    dialogue: [],
+    question: "What symbol indicates that a tag is a closing tag?",
     options: [
       {
-        answer: "<html></html>",
+        answer: "/",
         correct: true,
-        response: "That is correct!  html need a closing tag!",
+        response: "That is correct!  The symbol for a closing tag is indeed /",
       },
       {
-        answer: "<html />",
+        answer: "}",
         correct: false,
         response:
-          "No, html needs a seperate closing tag, it is not self-closing.",
+          "No, the closing bracket does not close a tag.",
       },
       {
-        answer: "<html><html>",
+        answer: "*",
         correct: false,
-        response: "No, the closing tag is missing the forward slash.",
+        response: "No, the star does not close a tag.",
       },
       {
-        answer: "<html><$html>",
+        answer: "<",
         correct: false,
         response:
-          "No, the dollar sign is not the character used to close a tag.",
+          "No, the bigger than and less than symbols specify the tag itself.",
       },
     ],
   },
   {
-    dialogue: [
-      "Hey, newbie!  If you ever get stuck on a problem, just ask!  Always start with the <HTML> tag!",
-      "Hi there!  I was so nervous when I first started that I was using something other than the forward slash (/) to close a tag!",
-      "Hello!  Don't worry, it takes a while before you start to remember which tags are self-closing.  The HTML tag is not one of them!",
-    ],
-    question: "Question2",
+    dialogue: [],
+    question: "Which of the following is an opening tag for a list that is made up of bullet points?",
     options: [
       {
-        answer: "<HTML></HTML>",
-        correct: true,
-        response: "That is correct!  HTML need a closing tag!",
+        answer: "<ol>",
+        correct: false,
+        response: "No, the ol tag creates an ordered, numbered list.",
       },
       {
-        answer: "<HTML />",
+        answer: "<li>",
+        correct: false,
+        response:
+          "No, the li tag creates a single item within a list, not the list itself.",
+      },
+      {
+        answer: "<ul>",
+        correct: true,
+        response: "That is correct!  This creates an unordered list with bullet points!",
+      },
+      {
+        answer: "<list>",
+        correct: false,
+        response:
+          "No, list is not a valid HTML tag.",
+      },
+    ],
+  },
+  {
+    dialogue: [],
+    question: "What is the formal term for placing something inside of something else?",
+    options: [
+      {
+        answer: "Spacing",
+        correct: false,
+        response: "That is incorrect.",
+      },
+      {
+        answer: "Nesting",
+        correct: true,
+        response:
+          "That is correct!  Nesting is adding items inside of other items.",
+      },
+      {
+        answer: "Indenting",
+        correct: false,
+        response: "No, indenting is adding space before the code to indicate what the code is contained in.",
+      },
+      {
+        answer: "Organizing",
+        correct: false,
+        response:
+          "That is incorrect.",
+      },
+    ],
+  },
+  {
+    dialogue: [],
+    question: 'What tag puts "Learn to code" at the top of the browser tab?',
+    options: [
+      {
+        answer: "<title>",
+        correct: true,
+        response: "That is correct!  The title adds the browser tab name.",
+      },
+      {
+        answer: "<head>",
+        correct: false,
+        response:
+          "No, the header adds web page information and data.",
+      },
+      {
+        answer: "<body>",
+        correct: false,
+        response: "No, body contains the page display information.",
+      },
+      {
+        answer: "<html>",
+        correct: false,
+        response:
+          "No, the html tag encompasses the entire document.",
+      },
+    ],
+  },
+  {
+    dialogue: [],
+    question: "What is the function of this tag?: <a>",
+    options: [
+      {
+        answer: "Makes text larger",
+        correct: false,
+        response: "That is incorrect.",
+      },
+      {
+        answer: "Makes a horizontal line",
+        correct: false,
+        response:
+          "No, the <br /> tag creates a horizontal line.",
+      },
+      {
+        answer: "Underlines a word",
+        correct: false,
+        response: "That is incorrect.",
+      },
+      {
+        answer: "Creates a link",
+        correct: true,
+        response:
+          "That is correct!  The <a> tag creates a link!",
+      },
+    ],
+  },
+  {
+    dialogue: [],
+    question: "Which of the following is NOT an attribute?",
+    options: [
+      {
+        answer: "href",
+        correct: false,
+        response: "No, this is a valid attribute.",
+      },
+      {
+        answer: "src",
+        correct: false,
+        response:
+          "No, this is a valid attribute.",
+      },
+      {
+        answer: "class",
+        correct: false,
+        response: "No, this is a valid attribute.",
+      },
+      {
+        answer: "p",
+        correct: true,
+        response:
+          "This is correct!  p is a tag, not an attribute.",
+      },
+    ],
+  },
+  {
+    dialogue: [],
+    question: "To change the background of your HTML document, which tag should be modified?",
+    options: [
+      {
+        answer: "<html>",
+        correct: false,
+        response: "This is incorrect.",
+      },
+      {
+        answer: "<body>",
+        correct: true,
+        response:
+          "This is correct!  The body affects the entire document.",
+      },
+      {
+        answer: "<head>",
+        correct: false,
+        response: "This is incorrect, the head indicates document information, not document layout.",
+      },
+      {
+        answer: "<p>",
+        correct: false,
+        response:
+          "This is incorrect, the p tag affects the indicated paragraph only.",
+      },
+    ],
+  },
+  {
+    dialogue: [],
+    question: "Which of these is a self-closing tag? (empty tag)",
+    options: [
+      {
+        answer: "<link>",
+        correct: true,
+        response: "That is correct!  The link tag is self-closing!",
+      },
+      {
+        answer: "<a>",
+        correct: false,
+        response:
+          "No, the a tag needs a closing tag.",
+      },
+      {
+        answer: "<p>",
+        correct: false,
+        response: "No, a p tag needs a closing tag.",
+      },
+      {
+        answer: "<h1>",
+        correct: false,
+        response:
+          "No, the h1 tag needs a closing tag.",
+      },
+    ],
+  },
+  {
+    dialogue: [],
+    question: "The HTML tag contains: ",
+    options: [
+      {
+        answer: "sections of the page",
+        correct: false,
+        response: "No, it contains more than the sections of the page",
+      },
+      {
+        answer: "presentation of the web page",
         correct: false,
         response:
           "No, HTML needs a seperate closing tag, it is not self-closing.",
       },
       {
-        answer: "<HTML><HTML>",
-        correct: false,
-        response: "No, the closing tag is missing the forward slash.",
+        answer: "the content of the web page",
+        correct: true,
+        response: "That is correct, the html tag contains all the page information!",
       },
       {
-        answer: "<HTML><$HTML>",
+        answer: "None of the above",
         correct: false,
         response:
-          "No, the dollar sign is not the character used to close a tag.",
+          "Bo, that is incorrect.",
+      },
+    ],
+  },
+  {
+    dialogue: [],
+    question: "The html code at the very top of an HTML file is:",
+    options: [
+      {
+        answer: "<!CSS DOCTYPE>",
+        correct: false,
+        response: "That is incorrect.",
+      },
+      {
+        answer: "<!DOCTYPE HTML>",
+        correct: true,
+        response:
+          "That is correct!",
+      },
+      {
+        answer: "<DOCTYPE HTML>",
+        correct: false,
+        response: "That is incorrect.",
+      },
+      {
+        answer: "<!DOCTYPE>",
+        correct: false,
+        response:
+          "That is incorrect.",
       },
     ],
   },
