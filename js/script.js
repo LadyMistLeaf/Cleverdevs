@@ -90,20 +90,20 @@ let status = "dialogue";
 let answerCorrect = false;
 let buttonsActive = false; // to replace spacebar, check if there are buttons to be clicked to continue
 
-let congrats = new Audio('sounds/crowd-cheer.wav');
-let wrongAnswer = new Audio('sounds/failure-drum.mp3');
-let goodAnswer = new Audio('sounds/applause.wav');
+let congrats = new Audio("sounds/crowd-cheer.wav");
+let wrongAnswer = new Audio("sounds/failure-drum.mp3");
+let goodAnswer = new Audio("sounds/applause.wav");
 
 toggleButtons = () => {
-    BUTTON_1.classList.toggle("inactive");
-    BUTTON_2.classList.toggle("inactive");
-    BUTTON_3.classList.toggle("inactive");
-    BUTTON_4.classList.toggle("inactive");
-}
+  BUTTON_1.classList.toggle("inactive");
+  BUTTON_2.classList.toggle("inactive");
+  BUTTON_3.classList.toggle("inactive");
+  BUTTON_4.classList.toggle("inactive");
+};
 
-if(DIALOG_INFO[quizSection].dialogue.length === 0){
-    dialogue = false;
-    makeButtonsActive();
+if (DIALOG_INFO[quizSection].dialogue.length === 0) {
+  dialogue = false;
+  makeButtonsActive();
 }
 
 updateDialogue = () => {
@@ -120,26 +120,25 @@ updateScore = () => {
 };
 
 startGame = () => {
-    if(dialogue){
-        toggleButtons();
-    }
-    updateDialogue();
-    updateScore();
+  if (dialogue) {
+    toggleButtons();
+  }
+  updateDialogue();
+  updateScore();
 };
 
-document.onkeypress = function(event){
-    if(event.key == " "){
-        spaceDown = true;
-        spaceKeyDown();
-    }
-    
+document.onkeypress = function (event) {
+  if (event.key == " ") {
+    spaceDown = true;
+    spaceKeyDown();
+  }
 };
 
-document.onkeyup = function(event){
-    if(event.key == " "){
-        spaceDown = false;
-        checkSpaceDown = false;
-    }
+document.onkeyup = function (event) {
+  if (event.key == " ") {
+    spaceDown = false;
+    checkSpaceDown = false;
+  }
 };
 
 spaceKeyDown = () => {
@@ -157,70 +156,83 @@ spaceKeyDown = () => {
 };
 
 startQuiz = () => {
-    if(dialogue){
-        toggleButtons();
-        makeButtonsActive();
-    }
-    DIALOG_BOX.innerText = DIALOG_INFO[quizSection].question;
-    updateButtons();
+  if (dialogue) {
+    toggleButtons();
+    makeButtonsActive();
+  }
+  DIALOG_BOX.innerText = DIALOG_INFO[quizSection].question;
+  updateButtons();
 };
 
 updateButtons = () => {
-    ANSWER_1.innerText = DIALOG_INFO[quizSection].options[0].answer;
-    ANSWER_2.innerText = DIALOG_INFO[quizSection].options[1].answer;
-    ANSWER_3.innerText = DIALOG_INFO[quizSection].options[2].answer;
-    ANSWER_4.innerText = DIALOG_INFO[quizSection].options[3].answer;
+  ANSWER_1.innerText = DIALOG_INFO[quizSection].options[0].answer;
+  ANSWER_2.innerText = DIALOG_INFO[quizSection].options[1].answer;
+  ANSWER_3.innerText = DIALOG_INFO[quizSection].options[2].answer;
+  ANSWER_4.innerText = DIALOG_INFO[quizSection].options[3].answer;
 };
 
 makeButtonsActive = () => {
-    BUTTON_1.addEventListener("click", function(){checkAnswer(0)});
-    BUTTON_2.addEventListener("click", function(){checkAnswer(1)});
-    BUTTON_3.addEventListener("click", function(){checkAnswer(2)});
-    BUTTON_4.addEventListener("click", function(){checkAnswer(3)});
+  BUTTON_1.addEventListener("click", function () {
+    checkAnswer(0);
+  });
+  BUTTON_2.addEventListener("click", function () {
+    checkAnswer(1);
+  });
+  BUTTON_3.addEventListener("click", function () {
+    checkAnswer(2);
+  });
+  BUTTON_4.addEventListener("click", function () {
+    checkAnswer(3);
+  });
 };
 
 makeButtonsInactive = () => {
-    BUTTON_1.removeEventListener("click", function(){checkAnswer(0)});
-    BUTTON_2.removeEventListener("click", function(){checkAnswer(1)});
-    BUTTON_3.removeEventListener("click", function(){checkAnswer(2)});
-    BUTTON_4.removeEventListener("click", function(){checkAnswer(3)});
+  BUTTON_1.removeEventListener("click", function () {
+    checkAnswer(0);
+  });
+  BUTTON_2.removeEventListener("click", function () {
+    checkAnswer(1);
+  });
+  BUTTON_3.removeEventListener("click", function () {
+    checkAnswer(2);
+  });
+  BUTTON_4.removeEventListener("click", function () {
+    checkAnswer(3);
+  });
 };
 
 checkAnswer = (answer) => {
-    if(DIALOG_INFO[quizSection].options[answer].correct){
-        answerCorrect = true;
-        DIALOG_BOX.innerText = DIALOG_INFO[quizSection].options[answer].response;
-        quizSection++;
-        innerSection = 0;
-        score += points[answerTries];
-        answerTries = 0;
-        updateScore();
-        if(quizSection == quizLength){
-            endQuiz();
-        }
-        else {
-            goodAnswer.play();
-            if(dialogue){
-                status = "dialogue";
-                toggleButtons();
-                makeButtonsInactive();
-            }
-            
-        } 
+  if (DIALOG_INFO[quizSection].options[answer].correct) {
+    answerCorrect = true;
+    DIALOG_BOX.innerText = DIALOG_INFO[quizSection].options[answer].response;
+    quizSection++;
+    innerSection = 0;
+    score += points[answerTries];
+    answerTries = 0;
+    updateScore();
+    if (quizSection == quizLength) {
+      endQuiz();
+    } else {
+      goodAnswer.play();
+      if (dialogue) {
+        status = "dialogue";
+        toggleButtons();
+        makeButtonsInactive();
+      }
     }
-    else{
-        DIALOG_BOX.innerText = DIALOG_INFO[quizSection].options[answer].response;
-        wrongAnswer.play();
-        if(answerTries != points.length - 1){
-            answerTries++;
-        }
+  } else {
+    DIALOG_BOX.innerText = DIALOG_INFO[quizSection].options[answer].response;
+    wrongAnswer.play();
+    if (answerTries != points.length - 1) {
+      answerTries++;
     }
+  }
 };
 
 endQuiz = () => {
-    DIALOG_BOX.innerText = "Congratulations!  Your score is " + score;
-    status = "end";
-    congrats.play();
+  DIALOG_BOX.innerText = "Congratulations!  Your score is " + score;
+  status = "end";
+  congrats.play();
 };
 
 document.onload = startGame();
