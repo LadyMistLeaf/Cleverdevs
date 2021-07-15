@@ -7,7 +7,7 @@ const BUTTON_1 = document.getElementById("button1");
 const BUTTON_2 = document.getElementById("button2");
 const BUTTON_3 = document.getElementById("button3");
 const BUTTON_4 = document.getElementById("button4");
-const BUTTON_next = document.getElementById("buttonnext");
+const BUTTON_NEXT = document.getElementById("buttonnext");
 const SCORE = document.getElementById("score");
 
 const DIALOG_INFO = [
