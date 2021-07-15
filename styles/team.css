@@ -1,6 +1,6 @@
 .main_team {
   width: 98.9vw;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -20,7 +20,7 @@
 }
 .main_team h1 {
   font-weight: 500;
-  margin: 20px 0;
+  margin: 0px 0 20px 0;
 }
 .main_teamContainer {
   display: grid;

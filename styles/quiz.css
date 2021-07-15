@@ -37,7 +37,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .question-text {
@@ -57,8 +57,8 @@
 .quiz-next {
   max-width: 70vw;
   position: relative;
-  bottom: 8px;
-  right: -30%;
+  bottom: 8px !important;
+  right: -30% !important;
 }
 .quiz-next-container {
   position: relative;
