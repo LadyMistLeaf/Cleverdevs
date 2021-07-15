@@ -1,0 +1,472 @@
+{
+  "HTML": [
+    {
+      "Question": "What symbol indicates that a tag is a closing tag?",
+      "Question image": ".",
+      "Explanation": "The </tag name> indicates the end of a tag. For example, </body> This tag signifies the end of the body of the document. </html> This tag signifies the end of the html document.",
+      "Correct answer": "/",
+      "Incorrect answer 1": "}",
+      "Incorrect answer 2": "*",
+      "Incorrect answer 3": "<"
+    },
+    {
+      "Question": "Which of the following is an opening tag for a list that is made up of bullet points?",
+      "Question image": ".",
+      "Explanation": "Unordered HTML List An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.",
+      "Correct answer": "<ul>",
+      "Incorrect answer 1": "<ol>",
+      "Incorrect answer 2": "<li>",
+      "Incorrect answer 3": "<list>"
+    },
+    {
+      "Question": "The formal term for placing something inside of something else.",
+      "Question image": ".",
+      "Explanation": "HTML elements can be nested (this means that elements can contain other elements).\r\nAll HTML documents consist of nested HTML elements.",
+      "Correct answer": "Nesting",
+      "Incorrect answer 1": "Spacing",
+      "Incorrect answer 2": "Indenting",
+      "Incorrect answer 3": "Organizing"
+    },
+    {
+      "Question": "What tag put \"Learn to code\" at the top of the browser tab?",
+      "Question image": ".",
+      "Explanation": "An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.",
+      "Correct answer": "<title>",
+      "Incorrect answer 1": "<html>",
+      "Incorrect answer 2": "<head>",
+      "Incorrect answer 3": "<body>"
+    },
+    {
+      "Question": "The <h3> heading will make text that is bigger than the <h5> heading.",
+      "Question image": ".",
+      "Explanation": "The <h1> to <h6> tags are used to define HTML headings.\r\n<h1> defines the most important heading. <h6> defines the least important heading.",
+      "Correct answer": "TRUE",
+      "Incorrect answer 1": "FALSE"
+    },
+    {
+      "Question": "What tag is missing from the code below?",
+      "Question image": "cssq7.png",
+      "Explanation": "The <img /> Tag\r\nIt is called a self-closing tag, which means that there is just a slash at the end of the opening tag",
+      "Correct answer": "/>",
+      "Incorrect answer 1": "</head>",
+      "Incorrect answer 2": "<p>",
+      "Incorrect answer 3": "<body>"
+    },
+    {
+      "Question": "What is the function of this tag?: <a href>",
+      "Question image": ".",
+      "Explanation": "The HTML <a> href Attribute is used to specify the URL of the page that the link goes to. When the href attribute is not present in the <a> an element that it will not be a hyperlink.\r\nThis attribute is used to specify a link to any address. This attribute is used along with <a> tag.\r\nSyntax:\r\n<a href=\"URL\"> ",
+      "Correct answer": "Creates a link",
+      "Incorrect answer 1": "Makes text larger",
+      "Incorrect answer 2": "Makes horizontal line",
+      "Incorrect answer 3": "Underlines a word"
+    },
+    {
+      "Question": "Which of the following is NOT an attribute?",
+      "Question image": ".",
+      "Explanation": "HTML attributes are special words used inside the opening tag to control the element's behaviour. HTML attributes are a modifier of an HTML element type.",
+      "Correct answer": "p",
+      "Incorrect answer 1": "href",
+      "Incorrect answer 2": "src",
+      "Incorrect answer 3": "class"
+    },
+    {
+      "Question": "To change the background of your HTML document, which tag should be modified?",
+      "Considerations": "Deprecated HTML Attributes\r\nhttps://www.w3docs.com/learn-html/deprecated-html-attributes.html",
+      "Question image": ".",
+      "Explanation": "The HTML <body> tag defines the main content of the HTML document that will be directly visible on your web page. This tag contains the other tags of the HTML document. So, any change on it will affect the whole HTML document.",
+      "Correct answer": "<body>",
+      "Incorrect answer 1": "<html>",
+      "Incorrect answer 2": "<head>",
+      "Incorrect answer 3": "<p>"
+    },
+    {
+      "Question": "Which of the following is correct? (to begin the image code)",
+      "Question image": ".",
+      "Correct answer": "<img src=>",
+      "Incorrect answer 1": "<image src=>",
+      "Incorrect answer 2": "<img scr=>",
+      "Incorrect answer 3": "<imgsrc=>"
+    },
+    {
+      "Question": "Which of these is a self-closing tag? (empty tag)",
+      "Question image": ".",
+      "Explanation": "A Self-closing tag is a special form of start tag with a slash immediately before the closing right angle bracket. These indicate that the element is to be closed immediately, and has no content. ",
+      "Correct answer": "<link>",
+      "Incorrect answer 1": "<a>",
+      "Incorrect answer 2": "<p>",
+      "Incorrect answer 3": "<h1>"
+    },
+    {
+      "Question": "HTML is the meaning or:",
+      "Question image": ".",
+      "Explanation": "HyperText Markup Language (HTML) is the set of markup symbols or codes inserted into a file intended for display on the Internet. The markup tells web browsers how to display a web page's words and images.",
+      "Correct answer": "content of the web page",
+      "Incorrect answer 1": "semantic part of the page",
+      "Incorrect answer 2": "presentation of the web page",
+      "Incorrect answer 3": "neither answers are correct"
+    },
+    {
+      "Question": "The html code at the very top of an HTML file:",
+      "Question image": ".",
+      "Explanation": "All HTML documents must start with a <!DOCTYPE> declaration.\r\nThe declaration is not an HTML tag. It is an \"information\" to the browser about what document type to expect.",
+      "Correct answer": "<!DOCTYPE HTML>",
+      "Incorrect answer 1": "<!CSS DOCTYPE>",
+      "Incorrect answer 2": "<DOCTYPE HTML>",
+      "Incorrect answer 3": "<!DOCTYPE>"
+    }
+  ],
+  "CSS": [
+    {
+      "No": "1",
+      "Question": "What is CSS term is right before the colon?  EXAMPLE:      p { font-size: 10pt; }",
+      "Question image": ".",
+      "Explanation": "A CSS rule consists of a CSS selector and a set of CSS properties. The CSS selector determines what HTML elements to target with the CSS rule. The CSS properties specifies what to style of the targeted HTML elements.",
+      "Correct answer": "property",
+      "Incorrect answer 1": "value",
+      "Incorrect answer 2": "selector",
+      "Incorrect answer 3": "rule"
+    },
+    {
+      "No": "2",
+      "Question": "Which CSS property is used to change font color?",
+      "Question image": ".",
+      "Explanation": "The color property specifies the color of text.\r\nEg, h1 {color: #00ff00;}",
+      "Correct answer": "color:",
+      "Incorrect answer 1": "background-color:",
+      "Incorrect answer 2": "font:",
+      "Incorrect answer 3": "font-family:"
+    },
+    {
+      "No": "3",
+      "Question": "CSS stands for...",
+      "Question image": ".",
+      "Explanation": "CSS stands for Cascading Style Sheets · CSS describes how HTML elements are to be displayed on screen, paper, or in other media ",
+      "Correct answer": "Cascading Style Sheets",
+      "Incorrect answer 1": "Cascading Smart Stuff",
+      "Incorrect answer 2": "Cascading Style Size",
+      "Incorrect answer 3": "Cascading Smart Sheets"
+    },
+    {
+      "No": "4",
+      "Question": "What symbol is this code missing?",
+      "Question image": "cssq15.png",
+      "Correct answer": ";",
+      "Incorrect answer 1": ":",
+      "Incorrect answer 2": "*",
+      "Incorrect answer 3": "{"
+    },
+    {
+      "No": "5",
+      "Question": "What symbol is missing from the following code?",
+      "Question image": "cssq17.png",
+      "Correct answer": "-",
+      "Incorrect answer 1": "*",
+      "Incorrect answer 2": ";",
+      "Incorrect answer 3": ">"
+    },
+    {
+      "No": "6",
+      "Question": "The link to your CSS file belongs in what section of your HTML file?",
+      "Question image": ".",
+      "Explanation": "You can link this external file (. css file) to your HTML document file using the < link > tag . You can place this < link > tag Within the < head > section, and after the < title > element of your HTML file",
+      "Correct answer": "<head>",
+      "Incorrect answer 1": "<html>",
+      "Incorrect answer 2": "<title>",
+      "Incorrect answer 3": "<body>"
+    },
+    {
+      "No": "7",
+      "Question": "Code used to link CSS file to html file:",
+      "Question image": ".",
+      "Explanation": "CSS can be added to HTML documents in 3 ways:\r\nInline - by using the style attribute inside HTML elements.\r\nInternal - by using a <style> element in the <head> section.\r\nExternal - by using a <link> element to link to an external CSS file.",
+      "Correct answer": "<link rel=”stylesheet” href=”style.css”>",
+      "Incorrect answer 1": "<a href=\"stylesheet.css\">",
+      "Incorrect answer 2": "{link rel ”stylesheet” href=”style.css”}",
+      "Incorrect answer 3": "<meta style=”stylesheet.css\" rel=\"stylesheet\">"
+    },
+    {
+      "No": "8",
+      "Question": "CSS styles consist of the format:",
+      "Question image": ".",
+      "Explanation": "Every CSS declaration includes a property / value pair. Depending on the property, the value can include a single integer or keyword, to a series of keywords and values with or without units.",
+      "Correct answer": "property: value;",
+      "Incorrect answer 1": "property=value",
+      "Incorrect answer 2": "style=property",
+      "Incorrect answer 3": "style: value;"
+    },
+    {
+      "No": "9",
+      "Question": "CSS property used to center text:",
+      "Question image": ".",
+      "Explanation": "To center text in CSS, use the text-align property and define it with the value “center.”\r\nEg * {\r\ntext-align: center;\r\n}",
+      "Correct answer": "text-align",
+      "Incorrect answer 1": "textalign",
+      "Incorrect answer 2": "align",
+      "Incorrect answer 3": "aligncenter"
+    },
+    {
+      "No": "10",
+      "Question": "Prefix for a hex number color value:",
+      "Question image": ".",
+      "Explanation": "Well, \"hex color codes\" is another way of saying \"hexadecimal color codes\" or \"​hexadecimal values\". The format is a hash (#) followed by 6 numbers or letters.",
+      "Correct answer": "#",
+      "Incorrect answer 1": "*",
+      "Incorrect answer 2": ":",
+      "Incorrect answer 3": ";"
+    },
+    {
+      "No": "11",
+      "Question": "Hex code characters range from the number 0 to the letter:",
+      "Question image": ".",
+      "Explanation": "Hexadecimal color values are also supported in all browsers.\r\nA hexadecimal color is specified with: #RRGGBB.\r\nRR (red), GG (green) and BB (blue) are hexadecimal integers between 00 and FF specifying the intensity of the color.\r\nFor example, #0000FF is displayed as blue, because the blue component is set to its highest value (FF) and the others are set to 00.",
+      "Correct answer": "A",
+      "Incorrect answer 1": "F",
+      "Incorrect answer 2": "B",
+      "Incorrect answer 3": "G"
+    },
+    {
+      "No": "12",
+      "Question": "CSS uses HTML tags or _________to style an element:",
+      "Question image": ".",
+      "Explanation": "Selector is a pattern of elements and other terms that tell the browser which HTML elements should be selected to have the CSS property values inside the rule applied to them. The element or elements which are selected by the selector are referred to as the subject of the selector.",
+      "Correct answer": "Selector",
+      "Incorrect answer 1": "code",
+      "Incorrect answer 2": "name",
+      "Incorrect answer 3": "value"
+    },
+    {
+      "No": "13",
+      "Question": "CSS script that underlines text:",
+      "Question image": ".",
+      "Explanation": "The text-decoration property specifies the decoration added to text, and is a shorthand property for\r\ntext-decoration-line (required)\r\ntext-decoration-color\r\ntext-decoration-style",
+      "Correct answer": "text-decoration: underline",
+      "Incorrect answer 1": "text-transform: underline",
+      "Incorrect answer 2": "text-decoration: underscore",
+      "Incorrect answer 3": "text-transform: underscore"
+    },
+    {
+      "No": "14",
+      "Question": "CSS style that inserts attributes into individual tags:",
+      "Question image": ".",
+      "Explanation": "An inline style may be used to apply a unique style for a single element.\r\nTo use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.",
+      "Correct answer": "In-line",
+      "Incorrect answer 1": "Internal",
+      "Incorrect answer 2": "External",
+      "Incorrect answer 3": "Embedded"
+    },
+    {
+      "No": "15",
+      "Question": "CSS colors can take the form of all except:",
+      "Question image": ".",
+      "Explanation": "The <color> CSS data type represents a color.\r\nThere are several different ways to specify colors in CSS:\r\nColor Keywords\r\nRGB\r\nRGBA\r\nHSL\r\nHSLA\r\nHexadecimal",
+      "Correct answer": "monochromatic value",
+      "Incorrect answer 1": "a color name",
+      "Incorrect answer 2": "an RGBa value",
+      "Incorrect answer 3": "a hex code"
+    },
+    {
+      "No": "16",
+      "Question": "Which would be an appropriate property/value pair for styling the h2 selector?",
+      "Question image": ".",
+      "Explanation": "The declaration block contains one or more declarations separated by semicolons.\r\n\r\nEach declaration includes a CSS property name and a value, separated by a colon.\r\nMultiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.\r\n\r\np {\r\n  color: red;\r\n  text-align: center;\r\n}",
+      "Correct answer": "font-size: 16px;",
+      "Incorrect answer 1": "font-size: 12 pt;",
+      "Incorrect answer 2": "color: (255);",
+      "Incorrect answer 3": "text align: center;"
+    },
+    {
+      "No": "17",
+      "Question": "CSS script to make only the first letter of every word uppercase:",
+      "Question image": ".",
+      "Explanation": "capitalize Puts the first character of each word in uppercase; other characters are unaffected.",
+      "Correct answer": "text-transform: capitalize",
+      "Incorrect answer 1": "text-decoration: uppercase",
+      "Incorrect answer 2": "text-transform: uppercase",
+      "Incorrect answer 3": "text-decoration: capitalize"
+    },
+    {
+      "No": "18",
+      "Question": "The property used to specify a certain font and its alternative options is:",
+      "Question image": ".",
+      "Explanation": "The font-family property specifies a list of fonts, from highest priority to lowest",
+      "Correct answer": "font-family:",
+      "Incorrect answer 1": "text-decoration:",
+      "Incorrect answer 2": "font-style:",
+      "Incorrect answer 3": "text-transform:"
+    }
+  ],
+  "JS": [
+    {
+      "No": "1",
+      "Question": "What does NOT create a valid function myFunc ?",
+      "Explanation": "Functions can be created in different ways:\r\nA function as a statement. Eg, function functionName (parameters) \r\n\r\nA function as an expression. Eg, functionName([parameters]) {\r\n   statements\r\n} \r\nA function as an arrow function. Eg,  let myFunc = () =>{}",
+      "Correct answer": "function : myFunc() { }",
+      "Incorrect answer 1": "var myFunc = function() { }",
+      "Incorrect answer 2": "function myFunc() { }",
+      "Incorrect answer 3": "let myFunc = () => {};"
+    },
+    {
+      "No": "2",
+      "Question": "Inside which element do we put the JavaScript",
+      "Explanation": "The <script> tag is used to contain javascript code.",
+      "Correct answer": "<script>  ",
+      "Incorrect answer 1": "<javascript>",
+      "Incorrect answer 2": "<scripting>",
+      "Incorrect answer 3": "<js>"
+    },
+    {
+      "No": "3",
+      "Question": "What is the correct JavaScript syntax to change the content of the HTML element below?\r\n<p id=\"demo\">This is a demostration</p>",
+      "Explanation": "The getElementById() method returns the element that has the ID attribute with the specified value. This method is one of the most common methods in the HTML DOM, and is used almost every time you want to manipulate, or get info from, an element on your document.\r\nThe innerHTML property sets or returns the HTML content (inner HTML) of an element.",
+      "Correct answer": "document.getElementById(\"demo\").innerHTML = \"Hello World!\";",
+      "Incorrect answer 1": "document.getElement(\"p\").innerHTML = \"Hello World!\";",
+      "Incorrect answer 2": "document.getElement(\"p\").innerHTML = \"Hello World!\";",
+      "Incorrect answer 3": "document.getElement(\"p\").innerHTML = \"Hello World!\";"
+    },
+    {
+      "No": "4",
+      "Question": "What is the correct syntax for referring to an external script called \"xxx.js\"?",
+      "Explanation": "The src attribute specifies the URL of an external script file.",
+      "Correct answer": "<script src=\"xxx.js\">",
+      "Incorrect answer 1": "<script href=\"xxx.js\">",
+      "Incorrect answer 2": "<script name=\"xxx.js\">",
+      "Incorrect answer 3": "<script body=\"xxx.js>"
+    },
+    {
+      "No": "5",
+      "Question": "How do you write \"Hello World\" in an alert box?",
+      "Explanation": "Alert box is often used if you want to make sure information comes through to the user.\r\nIt's syntax is window.alert(\"sometext\"); Nevertheless, window can be ommited",
+      "Correct answer": "alert(\"Hello World\");",
+      "Incorrect answer 1": "alertBox(\"Hello World\");",
+      "Incorrect answer 2": "msgBox(\"Hello World\");",
+      "Incorrect answer 3": "msg(\"Hello World\");"
+    },
+    {
+      "No": "6",
+      "Question": "How do you call a function named \"myFunction\"?",
+      "Explanation": "To call this function, you simply call it directly by name, then pass in the parameter value.\r\nEg, myFunction()",
+      "Correct answer": "myFunction()",
+      "Incorrect answer 1": "call function myFunction()",
+      "Incorrect answer 2": "call myFunction()",
+      "Incorrect answer 3": "myFunction call()"
+    },
+    {
+      "No": "7",
+      "Question": "How to write an IF statement in JavaScript?",
+      "Explanation": "Use if to specify a block of code to be executed, if a specified condition is true. \r\nThe syntax is \r\nif (condition) {\r\n  //  block of code to be executed if the condition is true\r\n}",
+      "Correct answer": "if (i == 5)",
+      "Incorrect answer 1": "if i == 5 then",
+      "Incorrect answer 2": "if i = 5 then",
+      "Incorrect answer 3": "if i = 5"
+    },
+    {
+      "No": "8",
+      "Question": "How to write an IF statement for executing some code if \"i\" is NOT equal to 5?",
+      "Explanation": "Use if to specify a block of code to be executed, if a specified condition is true. \r\nThe syntax is \r\nThe not equal operator is !=",
+      "Correct answer": "if (i != 5)",
+      "Incorrect answer 1": "if i =! 5 then",
+      "Incorrect answer 2": "if (i <> 5)",
+      "Incorrect answer 3": "if i <> 5"
+    },
+    {
+      "No": "9",
+      "Question": "How does a FOR loop start?",
+      "Explanation": "The for loop has the following syntax:\r\nfor (statement 1; statement 2; statement 3) {\r\n// code block to be executed\r\n}",
+      "Correct answer": "for (i = 0; i <= 5; i++)",
+      "Incorrect answer 1": "for (i <= 5; i++)",
+      "Incorrect answer 2": "for (i = 0; i <= 5)",
+      "Incorrect answer 3": "for i = 1 to 5"
+    },
+    {
+      "No": "10",
+      "Question": "How does a WHILE loop start?",
+      "Explanation": "The while loop loops through a block of code as long as a specified condition is true.\r\nIt's syntax is:\r\nwhile (condition) {\r\n  // code block to be executed\r\n}",
+      "Correct answer": "while (i <= 10)",
+      "Incorrect answer 1": "while (i <= 10; i++)",
+      "Incorrect answer 2": "while i = 1 to 10",
+      "Incorrect answer 3": "while (i--; i<10)"
+    },
+    {
+      "No": "11",
+      "Question": "How to insert a comment that has more than one line?",
+      "Explanation": "JavaScript comments can be used to explain JS code, to make it more readable and to prevent execution, when testing alternative code.\r\nSingle comment //\r\nMultiple comment /* */",
+      "Correct answer": "/*This comment has more than one line*/",
+      "Incorrect answer 1": "//This comment has more than one line//",
+      "Incorrect answer 2": "<!--This comment has more than one line-->",
+      "Incorrect answer 3": "*/This comment has more than one line*/"
+    },
+    {
+      "No": "12",
+      "Question": "What is the correct way to write a JavaScript array?",
+      "Explanation": "JavaScript arrays are used to store multiple values in a single variable. Its syntax is:\r\nvar array_name = [item1, item2, ...];",
+      "Correct answer": "var colors = [\"red\", \"green\", \"blue\"]",
+      "Incorrect answer 1": "var colors = \"red\", \"green\", \"blue\"",
+      "Incorrect answer 2": "var colors = 1 = (\"red\"), 2 = (\"green\"), 3 = (\"blue\")",
+      "Incorrect answer 3": "var colors = (1:\"red\", 2:\"green\", 3:\"blue\")"
+    },
+    {
+      "No": "13",
+      "Question": "How do you round the number 7.25, to the nearest integer?",
+      "Explanation": "The round() method rounds a number to the nearest integer. Its syntax is:\r\nMath.round(number)",
+      "Correct answer": "Math.round(7.25)",
+      "Incorrect answer 1": "round(7.25)",
+      "Incorrect answer 2": "rnd(7.25)",
+      "Incorrect answer 3": "Math.rnd(7.25)"
+    },
+    {
+      "No": "14",
+      "Question": "How do you find the number with the highest value of x and y?",
+      "Explanation": "The max() method returns the number with the highest value. Its syntax is:\r\nMath.max(n1, n2, n3, ..., nX)",
+      "Correct answer": "Math.max(x, y)",
+      "Incorrect answer 1": "Math.ceil(x, y)",
+      "Incorrect answer 2": "top(x, y)",
+      "Incorrect answer 3": "ceil(x, y)"
+    },
+    {
+      "No": "15",
+      "Question": "Which event occurs when the user clicks on an HTML element?",
+      "Explanation": "The onclick event occurs when the user clicks on an element.",
+      "Correct answer": "onclick",
+      "Incorrect answer 1": "onmouseover",
+      "Incorrect answer 2": "onmouseclick",
+      "Incorrect answer 3": "onchange"
+    },
+    {
+      "No": "16",
+      "Question": "How do you declare a JavaScript variable?",
+      "Explanation": "There are 3 ways to declare a JavaScript variable:\r\nUsing var\r\nUsing let\r\nUsing const",
+      "Correct answer": "var carName;",
+      "Incorrect answer 1": "v carName;",
+      "Incorrect answer 2": "variable carName;",
+      "Incorrect answer 3": "x = carName"
+    },
+    {
+      "No": "17",
+      "Question": "Which operator is used to assign a value to a variable?",
+      "Explanation": "You can assign a value to a variable using equal to (=) operator when you declare it or before using it.\r\nEg:\r\nvar <variable-name>;\r\nvar <variable-name> = <value>;",
+      "Correct answer": "=",
+      "Incorrect answer 1": "x",
+      "Incorrect answer 2": "*",
+      "Incorrect answer 3": "-"
+    },
+    {
+      "No": "18",
+      "Question": "What will the following code return: Boolean(10 > 9)",
+      "Explanation": "Boolean data type can only take the values true or false. It is used to find out if an expression (or a variable) is true or false.\r\nIn this case 10 is greatter than 9. So it will return true.",
+      "Correct answer": "true",
+      "Incorrect answer 1": "False",
+      "Incorrect answer 2": "NaN",
+      "Incorrect answer 3": "None"
+    },
+    {
+      "No": "19",
+      "Question": "How can you detect the client's browser name?",
+      "Explanation": "The appName property returns the application name of the browser",
+      "Correct answer": "navigator.appName",
+      "Incorrect answer 1": "client.navName",
+      "Incorrect answer 2": "browser.name",
+      "Incorrect answer 3": "chrome.name"
+    }
+  ]
+}
