@@ -297,6 +297,7 @@ let score = 0;
 let dialogue = true;
 let answerTries = 0;
 let points = [10, 7, 4, 1];
+let randAnswer = [];
 
 let quizSection = 0;
 let quizLength = DIALOG_INFO.length;
@@ -314,6 +315,15 @@ toggleButtons = () => {
   BUTTON_2.classList.toggle("inactive");
   BUTTON_3.classList.toggle("inactive");
   BUTTON_4.classList.toggle("inactive");
+};
+
+randomizeAnswers = () => {
+  let random = [0, 1, 2, 3]; // answers in the array
+  randAnswer = [];
+  for(i = random.length; i > 0; i--){
+    let number = random.splice(Math.floor(Math.random * i), 1);
+    randAnswer.push(number);
+  }
 };
 
 makeButtonsActive = () => {
